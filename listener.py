@@ -9,7 +9,7 @@ def callback(data):
 
 def listener():
 	rospy.init_node('listener', anonymous=True)
-	rospy.Subscriber('telemetry_decorated', String, callback)
+	rospy.Subscriber('telemetry', String, callback)
 
 	rospy.spin()
 
